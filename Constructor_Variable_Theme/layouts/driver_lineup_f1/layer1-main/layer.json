@@ -1,0 +1,300 @@
+{
+    "BlockRoot": {
+        "Name": "mainStack",
+        "BlockType": "stack",
+        "Margin": "{MarginRoot}",       
+        "Orientation": "Vertical",
+        "Items": [
+            //header block
+            {
+                "BlockType" : "component",
+                "ComponentName" : "lineup_block"
+            },
+
+            //separator
+            {
+                "Name" : "separator",
+                "BlockType": "image",
+                "MarginTop": 16,
+                "MarginLeft": 4,
+                "MarginRight": 4,
+                "MarginBottom": 24,
+                "Width": "*",
+                "Source": "separator.png"
+            },
+            //Block 1/10 for each team
+
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "HorizontalAlignment": "center",
+                "StretchWidth": "True",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 0,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 2/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 2,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 3/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 4,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 3/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 6,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 4/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 8,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 5/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 10,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 6/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 12,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 7/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 14,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 8/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 16,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Block 10/10 for each team
+            {
+                "BlockType": "Dock",
+                "Orientation": "Horizontal",
+                "MarginBottom": 20,
+                "Items": [
+                    {
+                        "Name": "LineupStackRow",
+                        "BlockType": "Itemstack",
+                        "Orientation": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "ItemStackOptions": {
+                            "ItemSource": "{Lineups.Lineups}",
+                            "Limit": 2,
+                            "IndexStart": 18,
+                            "Template": {
+                                "BlockType": "component",
+                                "ComponentName": "LineupDriver",
+                            }
+                        }
+                    },
+                ]
+            },
+            //Reserve Drivers Max 20
+            //Need to RenderIf option is activate
+            
+                    
+            //table
+            {
+                "Name": "mainTable",
+                "RenderIf": "{RenderReserveDriver}",
+                "BlockType": "table",
+                "Margin": "{MarginTable}",
+                "HorizontalAlignment": "Center",
+                "TableOptions": {
+                    "ItemsSource": "{Lineups.LineupsReserves}",
+                    "RowSpacing": 16,
+                    "ColSpacing": 8,
+                    "HeaderTemplate": {
+                        "BlockType": "text",
+                        "MarginBottom": 8,
+                        "FontSize": "25",                        
+                        "TextOptionsExtern": "tableColumnHeader",
+                        "Foreground" : "{ForegroundRed}",
+                        "TextAlignment" : "Left",
+                        "MarginLeft" : -10
+                        //"Width": 100
+                    },
+                    // Driver 1
+                    "Columns": [
+                        {
+                            "Header": "[Reserve drivers]",                           
+                            "Template": {
+                                "BlockType" : "component",
+                                "ComponentName" : "LineupDriverReserve",
+                                "MarginLeft" : 25,
+                            }
+                        },
+                                                       
+                    ]
+                }
+            },
+            
+        ]
+    }
+}

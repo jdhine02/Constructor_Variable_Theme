@@ -1,0 +1,194 @@
+//header block
+{
+    "Name": "headerBlock",
+    "BlockType": "dock",
+    "Orientation": "Horizontal",
+    "Items": [
+        //headerLeft
+        {
+            "Name": "headerLeftPart",
+            "BlockType": "stack",
+            "Orientation": "Vertical",
+            "Spacing": 12,
+            "HorizontalAlignment": "Left",
+            "Items": [
+                //league name
+                
+                        {                            
+                            "BlockType": "text",
+                            "Source": "{Season.LeagueInfo.LeagueName}",                            
+                            "FontName": "{FontNameWide}",
+                            "FontSize": 22,
+                            "Foreground" : "{WhiteText}"
+                        },
+                        {                            
+                            "BlockType": "text",
+                            "Source": "{Season.Name}",
+                            "VerticalAlignment" : "Center",
+                            "FontName": "{FontNameWide}",
+                            "FontSize": 22,
+                            "Foreground" : "{WhiteText}"
+                        },
+                        {
+                            "BlockType": "text",
+                            "Source": "Teammate Comparison",
+                            "FontName": "{FontNameWide}",  
+                            "Foreground" :"{WhiteText}",                                 
+                            "FontSize": 20
+                        },
+
+                //main header
+                {
+                    "Name": "headerMainContent",
+                    "BlockType": "stack",
+                    "Spacing": 8,
+                    "Items": [
+                        // {                           
+                        //     "BlockType": "image",
+                        //     "Height": 36,
+                        //     "Source": ""
+                        // },
+
+                       // {
+                       //     "BlockType": "text",                            
+                       //     "VerticalAlignment": "Center",                            
+                       //     "Source": "<header>",
+                       //     "FontName": "{FontNameWide}",
+                       //     "FontSize": 22,
+                      //      "Foreground" :"{WhiteText}"
+                      //  },
+
+                       // {                            
+                           // "BlockType": "text",                                                                         
+                           // "MarginLeft": 12,
+                           // "MarginTop": 4,
+                           // "VerticalAlignment": "Center",
+                            //"Source": "<subHeader>",
+                           // "FontName": "{FontNameWide}",
+                           // "FontSize": 22,
+                           // "Foreground" : "{WhiteText}"
+                       // }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "headerCenterPart",
+            "BlockType": "stack",
+            "Orientation": "Vertical",
+            "Spacing": 12,
+            "Padding": "0, 0",
+            "HorizontalAlignment": "Center",
+            "Items": [
+                //ChampionshipImage
+                {
+                    "BlockType" : "image",
+                    "Height": 200,
+                    "VerticalAlignment": "Top",
+                    "ImageOptions": {
+                        "Path": "trophies.png"
+                    },
+                    "Triggers": [ 
+                        {
+                            "Condition": "{RenderAlfaRomeoTheme}",
+                            "Property": "Source",
+                            "Value": "images/Alfa Romeo.png"
+                        }, 
+                        {
+                            "Condition": "{RenderAlphaTauriTheme}",
+                            "Property": "Source",
+                            "Value": "images/AlphaTauri.png"
+                        }, 
+                        {
+                            "Condition": "{RenderAlpineTheme}",
+                            "Property": "Source",
+                            "Value": "images/Alpine.png"
+                        },
+                        {
+                            "Condition": "{RenderAstonMartinTheme}",
+                            "Property": "Source",
+                            "Value": "images/Aston Martin.png"
+                        },
+                        {
+                            "Condition": "{RenderFerrariTheme}",
+                            "Property": "Source",
+                            "Value": "images/Ferrari.png"
+                        }, 
+                        {
+                            "Condition": "{RenderHaasTheme}",
+                            "Property": "Source",
+                            "Value": "images/Haas.png"
+                        },  
+                        {
+                            "Condition": "{RenderMcLarenTheme}",
+                            "Property": "Source",
+                            "Value": "images/McLaren.png"
+                        },
+                        {
+                            "Condition": "{RenderMercedesTheme}",
+                            "Property": "Source",
+                            "Value": "images/Mercedes.png"
+                        }, 
+                        {
+                            "Condition": "{RenderRedBullTheme}",
+                            "Property": "Source",
+                            "Value": "images/Red Bull.png"
+                        },
+                        {
+                            "Condition": "{RenderWilliamsTheme}",
+                            "Property": "Source",
+                            "Value": "images/Williams.png"
+                        },  
+                    ]
+            }
+        ]
+    },
+        //headerRight
+        {
+            "Name": "headerRightPart",
+            "BlockType": "stack",
+            "Orientation": "Vertical",
+            "MarginLeft" : 48,
+            "HorizontalAlignment": "Right",
+            "Items": [
+                {
+                    "BlockType": "stack",
+                    "Items": [
+                        {
+                            "BlockType": "stack",
+                            "Orientation": "Vertical",
+                            "Spacing": 8,
+                            "Items": [
+                                {
+                                    "BlockType": "text",
+                                    "HorizontalAlignment": "Right",
+                                    "Source": "[Round] {Season.SeasonCurrentNumberEvent} [of] {Season.SeasonOverallNumberEvents}",
+                                    "FontName": "{FontNameWide}",
+                                    "Foreground" : "{WhiteText}",
+                                    "FontSize": 20
+                                },
+
+                                {
+                                    "BlockType": "text",
+                                    "HorizontalAlignment": "Right",
+                                    "Source": "[Season progress] {Season.SeasonProgressPercent}%",
+                                    "FontName": "{FontNameWide}",  
+                                    "Foreground" :"{WhiteText}",                                 
+                                    "FontSize": 20
+                                },
+                            ]
+                        },
+
+                        {
+                            "Name": "leagueLogo",
+                            "BlockType": "image",
+                            "Height": 82,
+                            "MarginLeft": 36,
+                            "Source": "{Season.LeagueInfo.LeagueLogo}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

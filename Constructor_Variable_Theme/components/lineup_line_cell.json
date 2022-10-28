@@ -1,0 +1,103 @@
+{
+    "BlockType": "dock",
+    "PaddingLeft": 12,
+    "PaddingRight": 4,    
+    "Background": "[BG{Theme}]",
+    "Items": [
+        //left part
+        {
+            "BlockType": "stack",                    
+            "HorizontalAlignment": "Left",
+            "VerticalAlignment": "Center",
+            "Items": [
+                //logo
+                {
+                    "BlockType": "image",
+                    "MarginLeft" : 12,
+                    "Height": 48,
+                    "MarginRight": 20,
+                    "VerticalAlignment": "Center",
+                    "ImageOptions": {
+                        "Path": "{Item.Team.LogoPath}",
+                        "VerticalAlignment": "Center"
+                    }
+                },
+
+                //name
+                {
+                    "BlockType": "text",
+                    "MaxWidth": 600,                    
+                    "Source": "{Item.Team.Name}",
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "FontName": "{FontNameDefault}",
+                    "FontSize": 42,
+                },
+                //right part
+                {
+                    "BlockType": "stack",                    
+                    "HorizontalAlignment": "Right",
+                    "VerticalAlignment": "Center",
+                    "Items": [
+                         //text badge
+                        // {
+                        //    "BlockType": "text",
+                        //    "MaxWidth": 400,
+                        //    "MarginLeft": 500,
+                        //    "MarginTop": 8,
+                        //    "Source": "{Item.Driver.BadgeText}",
+                        //    "HorizontalAlignment": "Left",
+                       //     "VerticalAlignment": "Top",
+                        //    "FontName": "{FontNameDefault}",
+                        //    "FontSize": 16
+                        //},                        
+                        //name
+                        {
+                            "BlockType": "text",
+                            "MaxWidth": 600,
+                            "MarginLeft": 500,
+                            "Source": "{Item.Driver.Name}",
+                            "HorizontalAlignment": "Left",
+                            "VerticalAlignment": "Center",
+                            "FontName": "{FontNameDefault}",
+                            "FontSize": 42,
+
+                        },
+                        //icon badges
+                            {
+                            "BlockType": "itemstack",
+                            "Spacing": 4,
+                            "MarginLeft": 6,
+                            "MarginTop": 4,
+                            "ItemStackOptions": {
+                            "ItemSource": "{Item.Driver.BadgeImages}",
+                            "Template": {
+                            "BlockType": "image",
+                            "Height": 40,
+                            "Source": "{Item}"
+                                }
+                            }
+                        },
+                        
+                        //flag
+                        {
+                            "BlockType": "image",
+                            "Height": 48,
+                            "MarginRight": 20,
+                            "MarginLeft" : 20,
+                            "VerticalAlignment": "Center",
+                            "ImageOptions": {
+                                "Path": "{Item.Driver.Nationality.LogoPath}",
+                                "VerticalAlignment": "Center"
+                            }
+                        },
+
+                       
+                    ],
+                    
+                }
+            ]
+
+        }
+    ]
+}

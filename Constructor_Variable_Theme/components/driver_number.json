@@ -1,0 +1,13 @@
+{
+    "BlockType": "text",
+    "Source": "<RaceNumber>",
+    "Width": 65,
+    "Height": 68,
+    "BackgroundImage": "position_bg.png",
+    "FontName": "{FontNameDefault}",
+    "FontSize": 40,
+    "Foreground": "WhiteText",
+    "TextOptions": {
+        "HorizontalAlignment": "Center"    
+    },
+}

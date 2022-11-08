@@ -21,12 +21,7 @@
                 "FontName": "{FontNameDefault}",
                 "FontSize": 26,
                 "HorizontalAlignment": "Center"
-            },
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },              
+            },           
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=Time}>",
@@ -67,11 +62,6 @@
                             "Value" : "22"
                         }
                     ]                
-                },
-                {
-                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                    "Property": "ColorizeBackgroundOptions.Enabled",
-                    "Value": true
                 },
                     {
                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -153,12 +143,7 @@
                 "FontName": "{FontNameDefault}",
                 "FontSize": 26,
                 "HorizontalAlignment": "Center"
-            },
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },                                 
+            },                               
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=String}>",
@@ -199,11 +184,6 @@
                             "Value" : "22"
                         }
                     ]                
-                },
-                {
-                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                    "Property": "ColorizeBackgroundOptions.Enabled",
-                    "Value": true
                 },
                     {
                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -285,12 +265,7 @@
                 "FontName": "{FontNameDefault}",
                 "FontSize": 26,
                 "HorizontalAlignment": "Center"
-            },  
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },                             
+            },                              
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=Gap}>",
@@ -332,11 +307,6 @@
                             "Value" : "22"
                         }
                     ]                
-                },
-                {
-                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                    "Property": "ColorizeBackgroundOptions.Enabled",
-                    "Value": true
                 },
                     {
                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -419,11 +389,7 @@
                 "FontSize": 30,
                 "HorizontalAlignment": "Center"
             },
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },                               
+                               
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=Number}>",
@@ -464,11 +430,6 @@
                             "Value" : "28"
                         }
                     ]                
-                },
-                {
-                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                    "Property": "ColorizeBackgroundOptions.Enabled",
-                    "Value": true
                 },
                     {
                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -551,12 +512,7 @@
                 "FontName": "{FontNameDefault}",
                 "FontSize": 30,
                 "HorizontalAlignment": "Center"
-            },
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },                               
+            },                              
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=SecondaryNumber}>",
@@ -598,11 +554,6 @@
                             "Value" : "28"
                         }
                     ]                
-                },
-                {
-                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                    "Property": "ColorizeBackgroundOptions.Enabled",
-                    "Value": true
                 },
                     {
                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -693,12 +644,7 @@
                     "IsEnabled" : true,
                     "Level" : "<{data.Level}>"
                 },
-            },
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },                          
+            },                         
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=Rating}>",
@@ -729,11 +675,6 @@
                             "Value" : "28"
                         }
                     ]                
-                },
-                {
-                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                    "Property": "ColorizeBackgroundOptions.Enabled",
-                    "Value": true
                 },
                     {
                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -807,12 +748,7 @@
             "Height" : "*",
             "Spacing": 4,
             "Padding": "12, 0",
-            "Background": "{BackgroundDefault}",
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },            
+            "Background": "{BackgroundDefault}",     
             "ItemStackOptions": {
                 "ItemSource": "<{data.Stints}>",
                 "Template": {
@@ -847,11 +783,6 @@
                                             "Value" : "{Item.Percentage, Converter=StringAdd, Parameter=%}"
                                         }
                                     ]                
-                                },
-                                {
-                                    "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                                    "Property": "ColorizeBackgroundOptions.Enabled",
-                                    "Value": true
                                 },
                                     {
                                         "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
@@ -933,12 +864,7 @@
             "Source": "<{data.Tyres, Converter=StringFormatReverse, Parameter=tyres_SUB.png}>",
             "VerticalAlignment" : "Center",
             "HorizontalAlignment": "Center",
-            "Background": "{BackgroundDefault}", 
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },            
+            "Background": "{BackgroundDefault}",             
             "Triggers" : [
                 {
                     "Condition" : "<{data.Type, Converter=EnumEquals, Parameter=Tyres}>",
@@ -950,11 +876,6 @@
                         },
                     ]
                 },
-                        {
-                            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                            "Property": "ColorizeBackgroundOptions.Enabled",
-                            "Value": true
-                        },
                             {
                                 "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
                                 "ConditionAnd": "{RenderDNFColors}",
@@ -1050,12 +971,7 @@
             "Width" : "*",
             "Height" : "*",           
             "Padding": "12, 0",
-            "Background": "{BackgroundDefault}",
-            "ColorizeBackground": {
-                "Enabled": false,
-                "Color": "{P1Foreground}",
-                "BlendPercentage": 50
-            },            
+            "Background": "{BackgroundDefault}",           
             "VerticalAlignment" : "Center",               
             "Triggers" : [
                 {
@@ -1068,11 +984,6 @@
                         },
                     ]
                 },
-                        {
-                            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-                            "Property": "ColorizeBackgroundOptions.Enabled",
-                            "Value": true
-                        },
                             {
                                 "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
                                 "ConditionAnd": "{RenderDNFColors}",

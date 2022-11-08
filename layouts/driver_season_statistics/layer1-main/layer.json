@@ -28,15 +28,120 @@
                                         "BlockType": "text",
                                         "Source": "{Season.LeagueInfo.LeagueName}",
                                         "FontName": "{FontNameWide}",
-                                        "FontSize": 20
+                                        "FontSize": 28,
+                                        "Foreground": "{BlackText}",
+                                        "Triggers": [
+                                            {
+                                                "Condition": "{RenderAlfaRomeoTheme}",
+                                                "Property": "{Foreground}",
+                                                "Value": "{AlfaRomeoPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAlphaTauriTheme}",
+                                                "Property": "{Foreground}",
+                                                "Value": "{AlphaTauriPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAlpineTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{AlpinePrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAstonMartinTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{AstonMartinPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderFerrariTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{FerrariPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderHaasTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{Haas3rd}"
+                                            },
+                                            {
+                                                "Condition": "{RenderMcLarenTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{McLarenPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderMercedesTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{MercedesPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderRedBullTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{RedBullPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderWilliamsTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{WilliamsPrimary}"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "BlockType": "text",
+                                "Source": "{Season.Name}",
+                                "VerticalAlignment": "Center",
+                                "FontName": "{FontNameWide}",
+                                "FontSize": 22,
+                                "Foreground": "{BlackText}",
+                                "Triggers": [
+                                    {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "{Foreground}",
+                                        "Value": "{AlfaRomeoPrimary}"
                                     },
                                     {
-                                        "BlockType": "text",
-                                        "Source": " · {Season.Name}",
-                                        "VerticalAlignment": "Center",
-                                        "FontName": "{FontNameWide}",
-                                        "FontSize": 16,
-                                        "Foreground": "{ForegroundDarker}"
+                                        "Condition": "{RenderAlphaTauriTheme}",
+                                        "Property": "{Foreground}",
+                                        "Value": "{AlphaTauriPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlpineTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AlpinePrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAstonMartinTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AstonMartinPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderFerrariTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{FerrariPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderHaasTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Haas3rd}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMcLarenTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{McLarenPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMercedesTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{MercedesPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderRedBullTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{RedBullPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderWilliamsTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{WilliamsPrimary}"
                                     }
                                 ]
                             },
@@ -56,11 +161,64 @@
 
                                     {
                                         "BlockType": "text",
-                                        "MarginLeft": 12,
+                                        "MarginLeft": 0,
                                         "VerticalAlignment": "Center",
                                         "Source": "{Statistics.Header}",
                                         "FontName": "{FontNameWide}",
-                                        "FontSize": 24
+                                        "FontSize": 24,
+                                        "Foreground": "{BlackText}",
+                                        "Triggers": [
+                                            {
+                                                "Condition": "{RenderAlfaRomeoTheme}",
+                                                "Property": "{Foreground}",
+                                                "Value": "{AlfaRomeoPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAlphaTauriTheme}",
+                                                "Property": "{Foreground}",
+                                                "Value": "{AlphaTauriPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAlpineTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{AlpinePrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAstonMartinTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{AstonMartinPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderFerrariTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{FerrariPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderHaasTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{Haas3rd}"
+                                            },
+                                            {
+                                                "Condition": "{RenderMcLarenTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{McLarenPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderMercedesTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{MercedesPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderRedBullTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{RedBullPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderWilliamsTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{WilliamsPrimary}"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -73,8 +231,60 @@
                                 "VerticalAlignment": "Center",
                                 "Source": "{Statistics.SubHeader}",
                                 "FontName": "{FontNameWide}",
-                                "FontSize": 18,
-                                "Foreground": "{ForegroundDarker}"
+                                "FontSize": 20,
+                                "Foreground": "{BlackText}",
+                                "Triggers": [
+                                    {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "{Foreground}",
+                                        "Value": "{AlfaRomeoPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlphaTauriTheme}",
+                                        "Property": "{Foreground}",
+                                        "Value": "{AlphaTauriPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlpineTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AlpinePrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAstonMartinTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AstonMartinPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderFerrariTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{FerrariPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderHaasTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Haas3rd}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMcLarenTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{McLarenPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMercedesTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{MercedesPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderRedBullTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{RedBullPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderWilliamsTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{WilliamsPrimary}"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -101,7 +311,59 @@
                                                 "Source": "[Round] {Season.SeasonCurrentNumberEvent} [of] {Season.SeasonOverallNumberEvents}",
                                                 "FontName": "{FontNameWide}",
                                                 "Foreground": "{ForegroundDarker}",
-                                                "FontSize": 18
+                                                "FontSize": 24,
+                                                "Triggers": [
+                                                    {
+                                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                                        "Property": "{Foreground}",
+                                                        "Value": "{AlfaRomeoPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderAlphaTauriTheme}",
+                                                        "Property": "{Foreground}",
+                                                        "Value": "{AlphaTauriPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderAlpineTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{AlpinePrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderAstonMartinTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{AstonMartinPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderFerrariTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{FerrariPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderHaasTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{Haas3rd}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderMcLarenTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{McLarenPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderMercedesTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{MercedesPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderRedBullTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{RedBullPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderWilliamsTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{WilliamsPrimary}"
+                                                    }
+                                                ]
                                             },
 
                                             {
@@ -109,8 +371,60 @@
                                                 "HorizontalAlignment": "Right",
                                                 "Source": "[Season progress] {Season.SeasonProgressPercent}%",
                                                 "FontName": "{FontNameWide}",
-                                                "FontSize": 18
-                                            }
+                                                "FontSize": 20,
+                                                "Triggers": [
+                                                    {
+                                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                                        "Property": "{Foreground}",
+                                                        "Value": "{AlfaRomeoPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderAlphaTauriTheme}",
+                                                        "Property": "{Foreground}",
+                                                        "Value": "{AlphaTauriPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderAlpineTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{AlpinePrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderAstonMartinTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{AstonMartinPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderFerrariTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{FerrariPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderHaasTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{Haas3rd}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderMcLarenTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{McLarenPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderMercedesTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{MercedesPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderRedBullTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{RedBullPrimary}"
+                                                    },
+                                                    {
+                                                        "Condition": "{RenderWilliamsTheme}",
+                                                        "Property": "Foreground",
+                                                        "Value": "{WilliamsPrimary}"
+                                                    }
+                                                ]
+                                            }                                                
                                         ]
                                     },
 
@@ -137,7 +451,59 @@
                 "MarginRight": 4,
                 "MarginBottom": 24,
                 "Width": "*",
-                "Source": "separator.png"
+                "Source": "separator.png",
+                "Triggers": [
+                    {
+                        "Condition": "{RenderAlfaRomeoTheme}",
+                        "Property": "{Foreground}",
+                        "Value": "{AlfaRomeoPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderAlphaTauriTheme}",
+                        "Property": "{Foreground}",
+                        "Value": "{AlphaTauriPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderAlpineTheme}",
+                        "Property": "Foreground",
+                        "Value": "{AlpinePrimary}"
+                    },
+                    {
+                        "Condition": "{RenderAstonMartinTheme}",
+                        "Property": "Foreground",
+                        "Value": "{AstonMartinPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderFerrariTheme}",
+                        "Property": "Foreground",
+                        "Value": "{FerrariPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderHaasTheme}",
+                        "Property": "Foreground",
+                        "Value": "{Haas3rd}"
+                    },
+                    {
+                        "Condition": "{RenderMcLarenTheme}",
+                        "Property": "Foreground",
+                        "Value": "{McLarenPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderMercedesTheme}",
+                        "Property": "Foreground",
+                        "Value": "{MercedesPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderRedBullTheme}",
+                        "Property": "Foreground",
+                        "Value": "{RedBullPrimary}"
+                    },
+                    {
+                        "Condition": "{RenderWilliamsTheme}",
+                        "Property": "Foreground",
+                        "Value": "{WilliamsPrimary}"
+                    }
+                ]
             },
 
             //table
@@ -154,7 +520,59 @@
                     "HeaderTemplate": {
                         "BlockType": "text",
                         "MarginBottom": 8,
-                        "TextOptionsExtern": "tableColumnHeader"
+                        "TextOptionsExtern": "tableColumnHeader",
+                        "Triggers": [
+                            {
+                                "Condition": "{RenderAlfaRomeoTheme}",
+                                "Property": "{Foreground}",
+                                "Value": "{AlfaRomeoPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderAlphaTauriTheme}",
+                                "Property": "{Foreground}",
+                                "Value": "{AlphaTauriPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderAlpineTheme}",
+                                "Property": "Foreground",
+                                "Value": "{AlpinePrimary}"
+                            },
+                            {
+                                "Condition": "{RenderAstonMartinTheme}",
+                                "Property": "Foreground",
+                                "Value": "{AstonMartinPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderFerrariTheme}",
+                                "Property": "Foreground",
+                                "Value": "{FerrariPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderHaasTheme}",
+                                "Property": "Foreground",
+                                "Value": "{Haas3rd}"
+                            },
+                            {
+                                "Condition": "{RenderMcLarenTheme}",
+                                "Property": "Foreground",
+                                "Value": "{McLarenPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderMercedesTheme}",
+                                "Property": "Foreground",
+                                "Value": "{MercedesPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderRedBullTheme}",
+                                "Property": "Foreground",
+                                "Value": "{RedBullPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderWilliamsTheme}",
+                                "Property": "Foreground",
+                                "Value": "{WilliamsPrimary}"
+                            }
+                        ]
                     },
                     "Columns": [
                         // //position

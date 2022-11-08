@@ -6,7 +6,7 @@
             {
                 "Name": "bg",
                 "BlockType": "image", 
-                "Source": "bg.png"
+                "Source": "images/white bg.png"
             }
         ]
     }

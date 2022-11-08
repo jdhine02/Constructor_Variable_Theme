@@ -3,6 +3,7 @@
     "PaddingLeft": 12,
     "PaddingRight": 4,
     "Background": "{BackgroundDefault}",
+    "RenderIf" : true,
     "ColorizeBackground": {
         "Enabled": false,
         "Color": "{P1Foreground}",
@@ -63,6 +64,11 @@
             "Condition": "{RenderWilliamsTheme}",
             "Property": "Background",
             "Value": "{WilliamsSecondaryBG}"
+        },
+        {
+            "Condition" : "{Statistics.Header, Converter=StringEquals, Parameter=Top battles}",
+            "Property" : "RenderIf",
+            "Value" : false
         }
         
     ],

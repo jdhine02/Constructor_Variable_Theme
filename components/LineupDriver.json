@@ -1,0 +1,128 @@
+{
+    "BlockType": "stack", 
+    "Height": 120,
+    "Width":600,
+    "MarginRight":100,
+    "BackgroundImage": "images/team/{Item.Team.Name}bg.png",
+    "Triggers":[
+        {
+            "Condition": "{RenderF1LineupBG, Converter=BoolReverse}",
+            "Property":"BackgroundImage",
+            "Value":"",
+        }
+    ],
+
+    
+    "Items": [
+        //left part
+        
+        {
+            "BlockType": "stack",                    
+            "HorizontalAlignment": "Left",
+            "MarginLeft": 10,
+            "Orientation": "Vertical",
+            "Items": [
+                {
+                    "BlockType": "stack",                    
+                    "HorizontalAlignment": "Left",
+                    "MarginLeft": 5,
+                    "Orientation": "Horizontal",
+                    "Items": [
+                                //name
+                                {
+                                    "BlockType": "text",
+                                    "MinWidth": 400,
+                                    "MarginRight": 12,   
+                                    "Source": "{Item.NationRender.Code, Converter=StringToUpperString}",
+                                    "HorizontalAlignment": "Left",
+                                    "VerticalAlignment": "Center",
+                                    "FontName": "Formula1-Bold.ttf",
+                                    "Foreground" :"FFFFFF",
+                                    "FontSize": "25",
+                                },
+                                //flag
+                                {
+                                    "BlockType": "image",
+                                    "Height": 30,
+                                    "VerticalAlignment": "Center",
+                                    "ImageOptions": {
+                                        "Path": "{Item.Driver.Nationality.LogoPath}",
+                                        "VerticalAlignment": "Center"
+                                    }
+                                }
+                            ]
+                },
+                
+                {
+                    "BlockType": "text",
+                    "MinWidth": 400,    
+                    "Source": "{Item.Driver.Name, Converter=StringToUpperString}",
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "FontName": "{FontNameDefault}",
+                    "Foreground" :"{Item.Team.Color}",
+                    "FontSize": "35",
+                },
+
+                //Need another block for team logo and team text
+        {
+            "BlockType": "stack",                    
+            "HorizontalAlignment": "Left",
+            "MarginLeft": 5,
+            "Orientation": "Horizontal",
+            "Items": [
+
+                    {
+                        "BlockType": "text",
+                        "MinWidth": 400,    
+                        "Source": "{Item.Team.Name}",
+                        "HorizontalAlignment": "Left",
+                        "VerticalAlignment": "Center",
+                        "FontName": "{FontNameDefault}",
+                        "Foreground" :"FFFFFF",
+                        "FontSize": "20",
+                    },
+                    //logo
+                    {
+                        "BlockType": "image",
+                        "MarginLeft" : 5,
+                        "Height": 28,
+                        "MarginRight": 10,
+                        "VerticalAlignment": "Center",
+                        "ImageOptions": {
+                            "Path": "{Item.Team.LogoPath}",
+                            "VerticalAlignment": "Center"
+                        }
+                    }
+                            
+                ]
+    },
+            ]
+        },
+
+                
+        //right part
+        
+        {
+            "BlockType": "dock",                    
+            "HorizontalAlignment": "Right",
+            "VerticalAlignment": "Center",
+            //"Orientation": "Horizontal",
+            "Opacity": "75",
+            "Items": [
+                //number
+                {
+                    "BlockType": "text",
+                    "Source": "{Item.Driver.RaceNumber, Converter=StringToUpperString}",
+                    "HorizontalAlignment": "Right",
+                    "MarginRight": 50,
+                    "VerticalAlignment": "Center",
+                    "FontName": "{FontNameDefault}",
+                    "Foreground" :"{Item.Team.Color}",
+                    "FontSize": 60,
+                }
+                          
+            ]
+        }
+    ]
+}

@@ -1,0 +1,370 @@
+{
+    "BlockType" : "dock",
+    "Background": "{BackgroundDefault}",
+    "ColorizeBackground": {
+        "Enabled": false,
+        "Color": "{P1Foreground}",
+        "BlendPercentage": 50
+    },
+    "Triggers": [
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "ColorizeBackgroundOptions.Enabled",
+            "Value": true
+        },
+        {
+            "Condition": "{RenderAlfaRomeoTheme}",
+            "Property":"Background",
+            "Value": "{AlfaRomeoPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderAlphaTauriTheme}",
+            "Property": "Background",
+            "Value": "{AlphaTauriPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderAlpineTheme}",
+            "Property": "Background",
+            "Value": "{Alpine3rdBG}"
+        },
+        {
+            "Condition": "{RenderAstonMartinTheme}",
+            "Property": "Background",
+            "Value": "{AstonMartinPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderFerrariTheme}",
+            "Property": "Background",
+            "Value": "{FerrariPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderHaasTheme}",
+            "Property": "Background",
+            "Value": "{HaasSecondaryBG}"
+        },
+        {
+            "Condition": "{RenderMcLarenTheme}",
+            "Property": "Background",
+            "Value": "{McLarenPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderMercedesTheme}",
+            "Property": "Background",
+            "Value": "{MercedesPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderRedBullTheme}",
+            "Property": "Background",
+            "Value": "{RedBullPrimaryBG}"
+        },
+        {
+            "Condition": "{RenderWilliamsTheme}",
+            "Property": "Background",
+            "Value": "{WilliamsSecondaryBG}"
+        }
+    ],
+
+    "Items":
+    [
+        {                                
+                
+            "BlockType" : "stack",
+            "PaddingLeft" : 4,
+            "PaddingRight" : 4,                           
+            "HorizontalAlignment": "Center",
+            "VerticalAlignment" : "Center",
+            "Spacing" : 4,            
+            "Items" :[
+                {
+                    "BlockType" : "image",
+                    "RenderIf" : " {Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                    "Source" : "arrow_up.png",
+                    "HorizontalAlignment": "Center",
+                    "VerticalAlignment" : "Center",
+                    "Height" : 16,
+                    "Triggers":[
+                        {
+                            "Condition": "{RenderAlfaRomeoTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_AlfaRomeo.png"                            
+                        },
+                        {
+                            "Condition": "{RenderAlphaTauriTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_AlphaTauri.png"                            
+                        },
+                        {
+                            "Condition": "{RenderAlpineTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_Alpine.png"                            
+                        },
+                        {
+                            "Condition": "{RenderFerrariTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_AlfaRomeo.png"                            
+                        },
+                        {
+                            "Condition": "{RenderHaasTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_Haas.png"                            
+                        },
+                        {
+                            "Condition": "{RenderMcLarenTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_Haas.png"                            
+                        },
+                        {
+                            "Condition": "{RenderMercedesTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_AlfaRomeo.png"                            
+                        },
+                        {
+                            "Condition": "{RenderRedBullTheme}",
+                            "Property": "Source",
+                            "Value": "images/arrows/arrow_up_RedBull.png"                            
+                        },
+                        {
+                            "Condition": "{RenderWilliamsTheme}",
+                            "Property": "{Source}",
+                            "Value": "images/arrows/arrow_up_Williams.png"                            
+                        },
+                    ]                                                                
+                },
+                {
+                    "BlockType" : "image",
+                    "RenderIf" : " {Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                    "Source" : "arrow_down.png",
+                    "HorizontalAlignment": "Center",
+                    "VerticalAlignment" : "Center",
+                    "Height" : 16,
+                    "Triggers":[
+                        {
+                            "Condition": "{RenderAlfaRomeoTheme}",
+                            "Property": "{Source}",
+                            "Value": "images/arrows/arrow_down_AlfaRomeo.png"                            
+                        },
+                        {
+                            "Condition": "{RenderMcLarenTheme}",
+                            "Property": "{Source}",
+                            "Value": "images/arrows/arrow_down_McLaren.png"                            
+                        },
+                        {
+                            "Condition": "{RenderMercedesTheme}",
+                            "Property": "{Source}",
+                            "Value": "images/arrows/arrow_down_Mercedes.png"                            
+                        },
+                        {
+                            "Condition": "{RenderRedBullTheme}",
+                            "Property": "{Source}",
+                            "Value": "images/arrows/arrow_down_RedBull.png"                            
+                        },
+                        {
+                            "Condition": "{RenderWilliamsTheme}",
+                            "Property": "{Source}",
+                            "Value": "images/arrows/arrow_down_Williams.png"                            
+                        },
+                    ]                                                                 
+                },
+                {
+                    "BlockType": "text",
+                    "RenderIf" : "{Item.PositionJump, Converter=NumberNotEquals, Parameter=0}",
+                    "Source": "{Item.PositionJump, Converter=NumberAbs} ",                            
+                    "HorizontalAlignment": "Center",
+                    "VerticalAlignment" : "Center",
+                    "FontName": "{FontNameDefault}",
+                    "FontSize": 24,
+                    "TextOptions": {
+                        "HorizontalAlignment": "Center"
+                    },
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "#01A401"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "#FF1717"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                            "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{DNFText}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{BlackText}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderAlphaTauriTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{WhiteText}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderAlpineTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{AlpinePrimary}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderAstonMartinTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{AstonMartinSecondary}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderFerrariTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{Ferrari4th}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderHaasTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{HaasSecondary}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderMcLarenTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{HaasSecondary}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                            "ConditionAnd": "{RenderMcLarenTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{McLaren4th}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderMercedesTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{Mercedes4th}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                            "ConditionAnd": "{RenderMercedesTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{MercedesSecondary}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderRedBullTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{RedBull4th}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                            "ConditionAnd": "{RenderRedBullTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{RedBull3rd}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
+                            "ConditionAnd": "{RenderWilliamsTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{WilliamsPrimary}"
+                                }
+                            ]
+                        },
+                        {
+                            "Condition" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
+                            "ConditionAnd": "{RenderWilliamsTheme}",
+                            "Setters" :
+                            [
+                                {
+                                    "Property" : "Foreground",
+                                    "Value" : "{Williams3rd}"
+                                }
+                            ]
+                        },
+                    ]
+                }
+            ]                                           
+        }
+    ]
+}

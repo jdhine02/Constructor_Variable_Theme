@@ -1,0 +1,159 @@
+{
+    "BlockType" : "stack",
+    "Witdh" : "*",
+    "Orientation" : "Vertical",
+    "Items" : [
+        {
+            "BlockType" : "dock",
+            "Orientation" : "Horizontal",
+            "Width" : "auto",
+            "Height" : 60,
+            "MarginTop" : 5,
+            "MarginBottom" : 5,
+            "Items" : [
+                //left
+                {
+                    "BlockType" : "stack",
+                    "Width" : 75,
+                    "Orientation" : "Vertical",
+                    "MarginRight" : 20,
+                    "Items" : [
+                        {
+                            "BlockType" : "dock",
+                            "Orientation" : "Horizontal",
+                            "Width" : "",
+                            "Height" : 45,
+                            "Items" :[
+                                {
+                                    "BlockType" :"text",
+                                    "Foreground" : "{WhiteText}",
+                                    "FontName" : "{FontNameBold}",
+                                    "FontSize" : 25,
+                                    "Source" : "0",
+                                    "RenderIf" : "{Item.Position, Converter=NumberLess, Parameter=10}",
+                                    "HorizontalAlignment" : "Left",
+                                    "VerticalAlignment" : "Center"
+                                },
+                                {
+                                    "BlockType" :"text",
+                                    "Foreground" : "{WhiteText}",
+                                    "FontName" : "{FontNameBold}",
+                                    "FontSize" : 25,
+                                    "Source" : "{Item.Position}",
+                                    "HorizontalAlignment" : "Left",
+                                    "VerticalAlignment" : "Center",
+                                    "MarginRight" : 10
+                                },
+                            ]
+                        },
+                        {
+                            "BlockType": "text",
+                            "Foreground" : "{WhiteText}",
+                            "FontName" : "{FontNameDefault}",
+                            "MarginTop" : -5,
+                            "HorizontalAlignment": "Left",
+                            "Source" : "{Item.Date, Converter=DateToDayOfMonth}.{Item.Date, Converter=DateToMonth}"
+                        }
+                    ]
+                },
+                //Middle
+                {
+                    "BlockType" : "stack",
+                    "Width" : "*",
+                    "Orientation" : "Vertical",
+                    "Items" : [
+                        {
+                        "BlockType" : "dock",
+                        "Orientation" : "Horizontal",
+                        "VerticalAlignment" : "Top",
+                        "Width" : "*",
+                        "Items" : [
+                            {
+                                "BlockType" : "image",
+                                "HorizontalAlignment" : "Left",
+                                "VerticalAlignment" : "Center",
+                                "Height" : 36,
+                                "PaddingBottom" : 0,
+                                "ImageOptions": {
+                                    "Path": "{Item.Track.Nation.LogoPath}"
+                                }
+                            },
+                            {
+                            "BlockType": "text",
+                            "Foreground" : "{WhiteText}",
+                            "FontName" : "{FontNameDefault}",
+                            "VerticalAlignment": "Top",
+                            "FontSize" : 20,
+                            "PaddingTop" : 15,
+                            "MarginLeft" : 10,
+                            "Source" : "{Item.Track.CircuitName, Converter=StringToUpperString}"
+                        },
+
+
+                    ]
+                },
+                        {
+                            "BlockType" : "dock",
+                            "Orientation" : "Horizontal",
+                            "VerticalAlignment" : "Top",
+                            "Width" : "*",
+                            "Items" : [
+                                {
+                                    "BlockType": "text",
+                                    "Foreground" : "{WhiteText}",
+                                    "HorizontalAlignment": "Left",
+                                    "FontName" : "{FontNameDefault}",
+                                    "FontSize" : 20,
+                                    "Source" : "Winner:"
+                                },
+                                {
+                                    "BlockType":"itemstack",
+                                    "Orientation" : "Horizontal",
+                                    "HorizontalAlignment":"Right",
+                                    "ItemStackOptions" : {
+                                        "ItemSource" : "{Item.Races}",
+        
+                                "Template": {
+                                "BlockType": "text",
+                                "RenderIf": "{ShowWinnerInCalendar}",
+                                "MaxWidth": 320,
+                                "PaddingLeft": 48,
+                                "PaddingRight": 48,
+                                "Source": "{Item.Event.WinnerString}",
+                                "HorizontalAlignment": "Left",
+                                "VerticalAlignment": "Center",
+                                        }
+                                    }
+                                },
+                                //layout
+                                    {
+                                    "BlockType": "image",
+                                    "Height": 50,
+                                     //"Padding" : "0, 8",
+                                    "PaddingTop": 8,
+                                    "PaddingBottom": 8,
+                                    "MarginRight": 20,
+                                    "VerticalAlignment": "Center",
+                                    "HorizontalAlignment" : "Right",
+                                    "ImageOptions": {
+                                    "Path": "images/layout/layout_{Item.Track.CircuitName}.png",
+                                    "VerticalAlignment": "Center"
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "BlockType" : "shape",
+            "Width" : "420",
+            "Height" : 3,
+            "ShapeOptions" : {
+                "ShapeType" : "rectangle",
+                "Fill" : "{P1Foreground}"
+            }
+        }
+    ]
+}

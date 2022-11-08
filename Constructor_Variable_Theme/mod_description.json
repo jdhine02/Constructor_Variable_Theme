@@ -1,9 +1,0 @@
-{
-  "Name": "Constructor Theme",
-  "Author": "jdhine02",
-  "Description": "This is a mod with 11 changable themes, one (1) for each team and a default. To select a theme: go to theme options-> settings -> select the mod and any variables you wish to be active.  Stats Render is not currently built.",
-  "ThemeStyle": "Dark",
-  "Version": "1.0",
-  "UseDefaultLayouts": true,
-  "IsNewRenderer": true
-}

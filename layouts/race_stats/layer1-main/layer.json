@@ -166,7 +166,7 @@
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "driver_line_cell_stats"                                
+                                "ComponentName" : "driver_line_cell"                                
                             }
                         },
                         //StartingPosition

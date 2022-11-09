@@ -642,7 +642,21 @@
                 "ColorizeRating" : 
                 {
                     "IsEnabled" : true,
-                    "Level" : "<{data.Level}>"
+                    "Level" : "<{data.Level}>",
+                    "GradientStops" : [
+                        {
+                            "Color" : "#71eb34",
+                            "Offset" : 100
+                        },
+                        {
+                            "Color" : "#ebe834",
+                            "Offset" : 50
+                        },
+                        {
+                            "Color" : "#eb4334",
+                            "Offset" : 0
+                        }
+                    ]
                 },
             },                         
             "Triggers" : [

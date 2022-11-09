@@ -64,11 +64,6 @@
             "Property": "Background",
             "Value": "{WilliamsSecondaryBG}"
         },
-        {
-            "Condition" : "{Statistics.Header, Converter=StringEquals, Parameter=Top battles}",
-            "Property" : "RenderIf",
-            "Value" : false
-        }
         
     ],
     "Items": [

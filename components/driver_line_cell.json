@@ -3,7 +3,6 @@
     "PaddingLeft": 12,
     "PaddingRight": 4,
     "Background": "{BackgroundDefault}",
-    "RenderIf" : true,
     "ColorizeBackground": {
         "Enabled": false,
         "Color": "{P1Foreground}",
@@ -96,10 +95,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Mercedes}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersMercedes-Bold}"
@@ -115,10 +110,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Williams}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersWilliams}"
@@ -133,10 +124,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Ferrari}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersFerrari}"
@@ -151,10 +138,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Alfa Romeo}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersAlfaRomeo}"
@@ -169,10 +152,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=McLaren}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersMcLaren}"
@@ -187,10 +166,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=AlphaTauri}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersAlphaTauri}"
@@ -205,10 +180,7 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Haas}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
+
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersHaas}"
@@ -223,10 +195,7 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Aston Martin}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
+
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersAstonMartin}"
@@ -241,10 +210,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Alpine}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersAlpine-Bold}"
@@ -259,10 +224,6 @@
                             "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Red Bull}",
                             "Setters" :
                             [
-                                //{
-                                  //  "Property" : "Foreground",
-                                  //  "Value" : "[Primary{Theme}]"
-                               // },
                                 {
                                     "Property" : "FontName",
                                     "Value" : "{F1NumbersRedbull}"

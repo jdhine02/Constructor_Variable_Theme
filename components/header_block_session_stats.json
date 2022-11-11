@@ -556,8 +556,13 @@
                                             "HorizontalAlignment" :"Right",
                                             "Spacing": 8,
                                             "Items": [
-                                            
-
+                                                {
+                                                    "Name": "CountryFlag",
+                                                    "BlockType": "image",
+                                                    "VerticalAlignment": "Center",
+                                                    "Height": 55,
+                                                    "Source": "{Session.Track.Nation.LogoPath}"
+                                                },
                                                 {
                                                     "Name": "CountryName",
                                                     "BlockType": "text",
@@ -620,14 +625,25 @@
                                                         }
                                                     ]
                                                 },
-                                                {
-                                                    "Name": "CountryFlag",
-                                                    "BlockType": "image",
-                                                    "VerticalAlignment": "Center",
-                                                    "Height": 55,
-                                                    "Source": "{Session.Track.Nation.LogoPath}"
-                                                },
                                             ]
+                                        },
+                                        {
+                                            "Name": "SC Count",
+                                            "BlockType": "text",
+                                            "MarginLeft": 0,
+                                            "VerticalAlignment": "Center",
+                                            "Source": "# of SCs: {Session.SafetyCarCount}",
+                                            "FontName": "{FontNameWide}",
+                                            "FontSize": 30,
+                                        },
+                                        {
+                                            "Name": "VSC Count",
+                                            "BlockType": "text",
+                                            "MarginLeft": 0,
+                                            "VerticalAlignment": "Center",
+                                            "Source": "# of VSCs: {Session.VirtualSafetyCarCount}",
+                                            "FontName": "{FontNameWide}",
+                                            "FontSize": 30,
                                         },
                                 //                {
                                 //                    "Name": "LocationName",

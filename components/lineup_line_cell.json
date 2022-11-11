@@ -91,8 +91,20 @@
                                 "VerticalAlignment": "Center"
                             }
                         },
+                //platform
+                {
+                    "BlockType": "image",
+                    "MarginLeft": 1,
+                    "MarginTop": 30,
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "Height": 30,
+                            "VerticalAlignment": "Top",
+                            "ImageOptions": {
+                                "Path": "images/logo_{Item.Driver.GamePlatform}.png",
+                            },
 
-                       
+                },                       
                     ],
                     
                 }

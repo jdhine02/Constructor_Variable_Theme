@@ -344,6 +344,18 @@
                     "RenderIf": "{RenderDriverFlags}",
                 },
 
+                //platform
+                {
+                    "BlockType": "text",
+                    "MarginLeft": 1,
+                    "MarginTop": 20,
+                    "Source": "{Item.Driver.GamePlatform}",
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "FontName": "{FontNameDefault}",
+                    "FontSize": 18,
+                },
+
                 //icon badges
                 {
                     "BlockType": "itemstack",

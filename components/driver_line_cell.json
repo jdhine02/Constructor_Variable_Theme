@@ -346,14 +346,17 @@
 
                 //platform
                 {
-                    "BlockType": "text",
+                    "BlockType": "image",
                     "MarginLeft": 1,
-                    "MarginTop": 20,
-                    "Source": "{Item.Driver.GamePlatform}",
+                    "MarginTop": 30,
                     "HorizontalAlignment": "Left",
                     "VerticalAlignment": "Center",
-                    "FontName": "{FontNameDefault}",
-                    "FontSize": 18,
+                    "Height": 30,
+                            "VerticalAlignment": "Top",
+                            "ImageOptions": {
+                                "Path": "images/logo_{Item.Driver.GamePlatform}.png",
+                            },
+
                 },
 
                 //icon badges

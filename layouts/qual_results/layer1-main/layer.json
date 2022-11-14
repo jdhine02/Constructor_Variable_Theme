@@ -278,61 +278,61 @@
                                                 "Value" : "{DNFText}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderAlfaRomeoTheme}",
                                                 "Property" : "Foreground",
                                                 "Value" : "{BlackText}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderAlphaTauriTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{AlphaTauri4th}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderAlpineTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{AlpinePrimary}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderAstonMartinTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{AstonMartin3rd}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderFerrariTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{FerrariSecondary}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderHaasTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{Haas3rd}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderMcLaren}",
                                                 "Property": "Foreground",
                                                 "Value": "{McLaren3rd}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderMercedes}",
                                                 "Property": "Foreground",
                                                 "Value": "{MercedesSecondary}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderRedBullTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{RedBull4th}"
                                             },
                                             {
-                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                                "Condition" : "{ItemIndex, Converter=NumberEquals, Parameter=1}",
                                                 "ConditionAnd": "{RenderWilliamsTheme}",
                                                 "Property": "Foreground",
                                                 "Value": "{WilliamsPrimary}"

@@ -87,7 +87,7 @@
                                 //ChampionshipImage
                                 {
                                     "BlockType" : "image",
-                                    "Height": 500,
+                                    "Height": 275,
                                     "VerticalAlignment": "Top",
                                     "ImageOptions": {
                                         "Path": "trophies.png",

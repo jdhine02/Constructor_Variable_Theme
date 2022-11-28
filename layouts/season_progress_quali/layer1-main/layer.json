@@ -382,6 +382,19 @@
                                         "Value": "{DNFText}"
                                     },
                                     {
+                                        "Condition" : "{Item.IsRaceMajorClassified, Converter=BoolReverse}",
+                                        "Setters":[ 
+                                            {
+                                                "Property" : "Foreground",
+                                                "Value" : "#990000"
+                                            },
+                                            {
+                                                "Property" : "FontSize",
+                                                "Value" : 22
+                                            },
+                                        ]
+                                    },
+                                    {
                                         "Condition": "{RenderAlfaRomeoTheme}",
                                         "Property":"Background",
                                         "Value":"{AlfaRomeoPrimaryBG}"

@@ -663,7 +663,7 @@
                                 "Background": "{#80FFE661}",
                                 "Source": "{Item.Date, Converter=DateToDayOfMonth} {Item.Date, Converter=DateToMonthInWords}",
                                 "FontSize": 24,
-                                "Foreground": "WhiteText",
+                                "Foreground": "000000",
                                 "TextOptions": {
                                     "HorizontalAlignment": "Center"
                                 },

@@ -101,7 +101,7 @@
                                         "Spacing": 12,
                                         "Padding": "0, 0",
                                         "HorizontalAlignment": "Right",
-                                        "Width": 600,
+                                        "Width": 700,
                                         "Items": [
                                                 //driver 1
                                                 {
@@ -324,7 +324,7 @@
                                                                         [
                                                                             {
                                                                                 "Property" : "Foreground",
-                                                                                "Value" : "{Mercedes3rd}"
+                                                                                "Value" : "{Mercedes4th}"
                                                                             }
                                                                         ]
                                                                     },
@@ -419,6 +419,16 @@
                                                                         ]
                                                                     }
                                                                 ]
+                                                            },
+                                                            {
+                                                                "BlockType" : "image",
+                                                                "Height" : 25,
+                                                                "MarginLeft" : 12,
+                                                                "VerticalAlignment": "Center",
+                                                                "MarginTop" : 0,
+                                                                "ImageOptions": {
+                                                                    "Path" : "images/logo_{Item.Line0.Driver.GamePlatform}"
+                                                                }
                                                             },
                                                             //flag
                                                             {
@@ -683,7 +693,7 @@
                                                                         [
                                                                             {
                                                                                 "Property" : "Foreground",
-                                                                                "Value" : "{Mercedes3rd}"
+                                                                                "Value" : "{Mercedes4th}"
                                                                             }
                                                                         ]
                                                                     },
@@ -778,6 +788,16 @@
                                                                         ]
                                                                     }
                                                                 ]
+                                                            },
+                                                            {
+                                                                "BlockType" : "image",
+                                                                "Height" : 25,
+                                                                "MarginLeft" : 12,
+                                                                "VerticalAlignment": "Center",
+                                                                "MarginTop" : 0,
+                                                                "ImageOptions": {
+                                                                    "Path" : "images/logo_{Item.Line1.Driver.GamePlatform}"
+                                                                }
                                                             },
                                                             //flag
                                                             {

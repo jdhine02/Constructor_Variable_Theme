@@ -406,16 +406,29 @@
                                         "Value" : "{P3Foreground}"
                                     },
                                     {
-                                        "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                                        "ConditionAnd" : "{RenderDNFColors}",
-                                        "Property" : "Foreground",
-                                        "Value" : "{DNFText}"
+                                        "Condition" : "{Item.IsRaceMajorClassified, Converter=BoolReverse}",
+                                        "Setters":[ 
+                                            {
+                                                "Property" : "Foreground",
+                                                "Value" : "#990000"
+                                            },
+                                            {
+                                                "Property" : "FontSize",
+                                                "Value" : 22
+                                            },
+                                        ]
                                     },
                                     {
                                         "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
                                         "ConditionAnd": "{RenderFLBackground}",
                                         "Property": "Background",
                                         "Value": "{FastestLapBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "Property": "Foreground",
+                                        "Value": "{WhiteText}"
                                     },
                                     {
                                         "Condition": "{RenderAlfaRomeoTheme}",

@@ -367,17 +367,6 @@
                                 ]
                             }
                         },
-                        {
-                            "Header" : "Avg. Pts",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "Source" : "{Item.DriverSeasonStatistics.5, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteText}",                                
-                            }
-                        },
                         
                         //Qual
                         
@@ -1444,7 +1433,8 @@
                                 ],
                                 "Source" : "{Item.CountDnf, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{PenaltyTimeStewardsForeground}",
-                                "TextOptionsExtern" : "primaryNumber"
+                                "TextOptionsExtern" : "primaryNumber",
+                                "Foreground": "#990000"
                             }
                         },
                         {
@@ -1547,6 +1537,12 @@
                                         "Value": true
                                     },
                                     {
+                                        "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                        "ConditionAnd":"{Item.RaceFastestLapCount, Converter=NumberZeroToEmpty}",
+                                        "Property": "Foreground",
+                                        "Value": "{FastestLap}"
+                                    },
+                                    {
                                         "Condition": "{RenderAlfaRomeoTheme}",
                                         "Property": "Background",
                                         "Value": "{AlfaRomeoPrimaryBG}"
@@ -1643,7 +1639,7 @@
                                     } 
                                 ],
                                 "Source" : "{Item.RaceFastestLapCount, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{FastestLap}",
+                                "Foreground" : "{#FF99F7}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
@@ -1847,7 +1843,7 @@
                                         "Condition": "{RenderWilliamsTheme}",
                                         "Property": "Background",
                                         "Value": "{WilliamsSecondaryBG}"
-                                    }
+                                    },
                                     
                                 ],
                                 "Items": [
@@ -1858,10 +1854,11 @@
                                         "VerticalAlignment": "Center",
                                         "TextOptions": {
                                                         "FontName": "{FontNameDefault}",
-                                                        "FontSize": 38,
-                                                        "Foreground": "{PenaltyTimeStewardsForeground}",
+                                                        "FontSize": 34,
+                                                        "Foreground": "#990000",
                                                         "HorizontalAlignment": "Center",
-                                                        "TextOptionsExtern" : "primaryNumber"
+                                                        "TextOptionsExtern" : "primaryNumber",
+                                                        "Foreground": "#990000"
                                             },
                                             "Triggers":[
                                                 {

@@ -209,7 +209,7 @@
                                     "Height": 500,
                                     "VerticalAlignment": "Top",
                                     "ImageOptions": {
-                                        "Path": "trophies.png",
+                                        "Path": "",
                                     },
                                  "Triggers": [ 
                                     {

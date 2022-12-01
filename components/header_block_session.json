@@ -433,12 +433,21 @@
                     "Items": [
                         //TrackImage
                         
-                            {
+                        {
                             "BlockType" : "image",
-                            "Height": 350,
+                            "Height": 200,
                             "VerticalAlignment": "Top",
                             "ImageOptions": {
                                 "Path": "images/tracks/track_{Session.Track.CircuitName}.png"
+                            },
+                            "RenderIf": "{RenderTrackImage}",
+                        },
+                        {
+                            "BlockType" : "image",
+                            "Height": 250,
+                            "VerticalAlignment": "Top",
+                            "ImageOptions": {
+                                "Path": ""
                             },
                             "Triggers": [ 
                                 {
@@ -494,7 +503,6 @@
                             ]
                         }
                     ],
-                "RenderIf": "{RenderTrackImage}",
             },
 
         //headerRight

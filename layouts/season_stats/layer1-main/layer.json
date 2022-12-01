@@ -672,13 +672,17 @@
                                         "Value": "{AlfaRomeoPrimaryBG}"
                                     },
                                     {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AlfaRomeoSecondary}"
+                                    },
+                                    {
                                         "Condition":"{RenderAlphaTauriTheme}",
                                         "Property": "Background",
                                         "Value":"{AlphaTauriPrimaryBG}"
                                     },
                                     {
                                         "Condition":"{RenderAlphaTauriTheme}",
-                                        "ConditionAnd": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
                                         "Property": "Foreground",
                                         "Value":"{AlphaTauriPrimary}"
                                     },
@@ -789,13 +793,17 @@
                                         "Value": "{AlfaRomeoPrimaryBG}"
                                     },
                                     {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AlfaRomeo4th}"
+                                    },
+                                    {
                                         "Condition":"{RenderAlphaTauriTheme}",
                                         "Property": "Background",
                                         "Value":"{AlphaTauriPrimaryBG}"
                                     },
                                     {
                                         "Condition":"{RenderAlphaTauriTheme}",
-                                        "ConditionAnd": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
                                         "Property": "Foreground",
                                         "Value":"{DNFText}"
                                     },
@@ -912,6 +920,11 @@
                                         "Condition": "{RenderAlfaRomeoTheme}",
                                         "Property": "Background",
                                         "Value": "{AlfaRomeoPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{BlackText}"
                                     },
                                     {
                                         "Condition":"{RenderAlphaTauriTheme}",

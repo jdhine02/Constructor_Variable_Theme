@@ -420,6 +420,27 @@
                                         "Value": "{AlfaRomeo3rdBG}"
                                     },
                                     {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{AlfaRomeoSecondary}",
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{DNFText}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd" : "{RenderP3Colors}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{BlackText}"
+                                    },
+                                    {
                                         "Condition": "{RenderAlphaTauriTheme}",
                                         "Property": "Background",
                                         "Value": "{AlphaTauriPrimaryBG}"
@@ -430,6 +451,13 @@
                                         "ConditionAnd": "{RenderAlphaTauriTheme}",
                                         "Property": "Background",
                                         "Value": "{AlphaTauri4thBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlphaTauriTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{WhiteText}"
                                     },
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",

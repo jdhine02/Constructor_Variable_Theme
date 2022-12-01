@@ -288,77 +288,88 @@
                                     }
                                 ]
                             },
+            //headerCenter
+            {
+                "Name": "headerCenterPart",
+                "BlockType": "stack",
+                "Orientation": "Vertical",
+                "Spacing": 12,
+                "Padding": "0, 0",
+                "HorizontalAlignment": "Center",
+                "Items": [
+                    //TrackImage
+                    
                     {
-                        "Name": "headerCenterPart",
-                        "BlockType": "stack",
-                        "Orientation": "Vertical",
-                        "Spacing": 12,
-                        "Padding": "0, 0",
-                        "HorizontalAlignment": "Center",
-                        "Items": [
-                            //ChampionshipImage
+                        "BlockType" : "image",
+                        "Height": 200,
+                        "VerticalAlignment": "Top",
+                        "ImageOptions": {
+                            "Path": "images/tracks/track_{Session.Track.CircuitName}.png"
+                        },
+                        "RenderIf": "{RenderTrackImage}",
+                    },
+                    {
+                        "BlockType" : "image",
+                        "Height": 250,
+                        "VerticalAlignment": "Top",
+                        "ImageOptions": {
+                            "Path": ""
+                        },
+                        "Triggers": [ 
                             {
-                                "BlockType" : "image",
-                                "Height": 400,
-                                "VerticalAlignment": "Top",
-                                "ImageOptions": {
-                                    "Path": "images/tracks/track_{Session.Track.CircuitName}.png",
-                                },
-                             "Triggers": [ 
-                                {
-                                    "Condition": "{RenderAlfaRomeoTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Alfa Romeo.png"
-                                }, 
-                                {
-                                    "Condition": "{RenderAlphaTauriTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/AlphaTauri.png"
-                                }, 
-                                {
-                                    "Condition": "{RenderAlpineTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Alpine.png"
-                                },
-                                {
-                                    "Condition": "{RenderAstonMartinTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Aston Martin.png"
-                                },
-                                {
-                                    "Condition": "{RenderFerrariTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Ferrari.png"
-                                }, 
-                                {
-                                    "Condition": "{RenderHaasTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Haas.png"
-                                },  
-                                {
-                                    "Condition": "{RenderMcLarenTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/McLaren.png"
-                                },
-                                {
-                                    "Condition": "{RenderMercedesTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Mercedes.png"
-                                }, 
-                                {
-                                    "Condition": "{RenderRedBullTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Red Bull.png"
-                                },
-                                {
-                                    "Condition": "{RenderWilliamsTheme}",
-                                    "Property": "Source",
-                                    "Value": "images/Williams.png"
-                                },  
-                            ]
+                                "Condition": "{RenderAlfaRomeoTheme}",
+                                "Property": "Source",
+                                "Value": "images/Alfa Romeo.png"
+                            }, 
+                            {
+                                "Condition": "{RenderAlphaTauriTheme}",
+                                "Property": "Source",
+                                "Value": "images/AlphaTauri.png"
+                            }, 
+                            {
+                                "Condition": "{RenderAlpineTheme}",
+                                "Property": "Source",
+                                "Value": "images/Alpine.png"
+                            },
+                            {
+                                "Condition": "{RenderAstonMartinTheme}",
+                                "Property": "Source",
+                                "Value": "images/Aston Martin.png"
+                            },
+                            {
+                                "Condition": "{RenderFerrariTheme}",
+                                "Property": "Source",
+                                "Value": "images/Ferrari.png"
+                            }, 
+                            {
+                                "Condition": "{RenderHaasTheme}",
+                                "Property": "Source",
+                                "Value": "images/Haas.png"
+                            },  
+                            {
+                                "Condition": "{RenderMcLarenTheme}",
+                                "Property": "Source",
+                                "Value": "images/McLaren.png"
+                            },
+                            {
+                                "Condition": "{RenderMercedesTheme}",
+                                "Property": "Source",
+                                "Value": "images/Mercedes.png"
+                            }, 
+                            {
+                                "Condition": "{RenderRedBullTheme}",
+                                "Property": "Source",
+                                "Value": "images/Red Bull.png"
+                            },
+                            {
+                                "Condition": "{RenderWilliamsTheme}",
+                                "Property": "Source",
+                                "Value": "images/Williams.png"
+                            },  
+                        ]
                     }
-                ]
-            },
+                ],
+        },
                     //headerRight
                     {
                         "Name": "headerRightPart",

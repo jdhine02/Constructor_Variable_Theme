@@ -11,8 +11,8 @@
                 "ComponentName": "header_block_race_progress",
             },
 
-            //separator
-            {
+             //separator
+             {
                 "Name": "separator",
                 "BlockType": "image",
                 "MarginTop": 16,
@@ -20,7 +20,59 @@
                 "MarginRight": 4,
                 "MarginBottom": 24,
                 "Width": "*",
-                "Source": "separator.png"
+                "Source": "separator.png",
+                "Triggers": [
+                    {
+                        "Condition": "{RenderAlfaRomeoTheme}",
+                        "Property": "Background",
+                        "Value": "{Ferrari4thBG}"
+                    },
+                    {
+                        "Condition": "{RenderAlphaTauriTheme}",
+                        "Property": "Background",
+                        "Value": "{AlphaTauriPrimaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderAlpineTheme}",
+                        "Property": "Background",
+                        "Value": "{Alpine3rdBG}"
+                    },
+                    {
+                        "Condition": "{RenderAstonMartinTheme}",
+                        "Property": "Background",
+                        "Value": "{AstonMartinPrimaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderFerrariTheme}",
+                        "Property": "Background",
+                        "Value": "{FerrariPrimaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderHaasTheme}",
+                        "Property": "Background",
+                        "Value": "{HaasSecondaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderMcLarenTheme}",
+                        "Property": "Background",
+                        "Value": "{McLarenPrimaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderMercedesTheme}",
+                        "Property": "Background",
+                        "Value": "{MercedesPrimaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderRedBullTheme}",
+                        "Property": "Background",
+                        "Value": "{RedBullPrimaryBG}"
+                    },
+                    {
+                        "Condition": "{RenderWilliamsTheme}",
+                        "Property": "Background",
+                        "Value": "{WilliamsSecondaryBG}"
+                    }
+                ]
             },
 
             //table
@@ -35,8 +87,59 @@
                     "HeaderTemplate": {
                         "BlockType": "text",
                         "MarginBottom": 8,
-                        "FontSize": 16,
-                        "TextOptionsExtern": "tableColumnHeader"
+                        "TextOptionsExtern" : "tableColumnHeader",
+                        "Triggers":[
+                            {
+                                "Condition": "{RenderAlfaRomeoTheme}",
+                                "Property":"Foreground",
+                                "Value": "{AlfaRomeoPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderAlphaTauriTheme}",
+                                "Property":"Foreground",
+                                "Value": "{AlphaTauriPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderAlpineTheme}",
+                                "Property":"Foreground",
+                                "Value": "{AlpinePrimary}"
+                            },
+                            {
+                                "Condition": "{RenderAstonMartinTheme}",
+                                "Property": "Foreground",
+                                "Value": "{AstonMartinPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderFerrariTheme}",
+                                "Property": "Foreground",
+                                "Value": "{FerrariPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderHaasTheme}",
+                                "Property": "Foreground",
+                                "Value": "{Haas3rd}"
+                            },
+                            {
+                                "Condition": "{RenderMcLarenTheme}",
+                                "Property": "Foreground",
+                                "Value": "{McLaren4th}"
+                            },
+                            {
+                                "Condition": "{RenderMercedesTheme}",
+                                "Property": "Foreground",
+                                "Value": "{MercedesSecondary}"
+                            },
+                            {
+                                "Condition": "{RenderRedBullTheme}",
+                                "Property": "Foreground",
+                                "Value": "{RedBullPrimary}"
+                            },
+                            {
+                                "Condition": "{RenderWilliamsTheme}",
+                                "Property": "Foreground",
+                                "Value": "{WilliamsPrimary}"
+                            }
+                        ]
                     },
                     "Columns": [
                         //position
@@ -83,12 +186,71 @@
                                         "TextOptionsExtern": "primaryNumber"
                                     }
                                 ],
-                                "Triggers" :
-                                [
+                                "ColorizeBackground": {
+                                    "Enabled": false,
+                                    "Color": "{P1Foreground}",
+                                    "BlendPercentage": 50
+                                },
+                                "Triggers": [
+                                    {
+                                        "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+                                        "Property": "ColorizeBackgroundOptions.Enabled",
+                                        "Value": true
+                                    },
                                     {
                                         "Condition" : "{Standings.IsPositionJumpForDriversExists}",
                                         "Property" : "PaddingRight",
                                         "Value" : 4
+                                    },
+                                    {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AlfaRomeoPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlphaTauriTheme}",
+                                        "Property":"Background",
+                                        "Value": "{AlphaTauriPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlpineTheme}",
+                                        "Property":"Background",
+                                        "Value": "{Alpine3rdBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAstonMartinTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AstonMartinPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderFerrariTheme}",
+                                        "Property": "Background",
+                                        "Value": "{FerrariPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderHaasTheme}",
+                                        "Property": "Background",
+                                        "Value": "{HaasSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMcLarenTheme}",
+                                        "Property": "Background",
+                                        "Value": "{McLarenPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMercedesTheme}",
+                                        "Property": "Background",
+                                        "Value": "{MercedesPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderRedBullTheme}",
+                                        "Property": "Background",
+                                        "Value": "{RedBullPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderWilliamsTheme}",
+                                        "Property": "Background",
+                                        "Value": "{WilliamsSecondaryBG}"
                                     }
                                 ]
                             }
@@ -131,7 +293,60 @@
                                         "FontSize": 20,
                                         "HorizontalAlignment": "Center",
                                         "Source": "{Item.Track.Nation.Code}",
-                                        "Foreground": "{WhiteText}"                                        
+                                        "Foreground": "{BlackText}",
+                                        "Triggers": [
+                                            {
+                                                "Condition": "{RenderAlfaRomeoTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{AlfaRomeoPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAlphaTauriTheme}",
+                                                "Property":"Foreground",
+                                                "Value": "{AlphaTauriPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAlpineTheme}",
+                                                "Property":"Foreground",
+                                                "Value": "{AlpinePrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderAstonMartinTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{AstonMartinPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderFerrariTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{FerrariPrimary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderHaasTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{Haas3rd}"
+                                            },
+                                            {
+                                                "Condition": "{RenderMcLarenTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{McLaren4th}"
+                                            },
+                                            {
+                                                "Condition": "{RenderMercedesTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{MercedesSecondary}"
+                                            },
+                                            {
+                                                "Condition": "{RenderRedBullTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{RedBull3rd}"
+                                            },
+                                            {
+                                                "Condition": "{RenderWilliamsTheme}",
+                                                "Property": "Foreground",
+                                                "Value": "{WilliamsPrimary}"
+                                            }
+                                        ]
+
                                     }
                                 ]
                             },
@@ -217,6 +432,382 @@
                                         "Value" : "{DNFText}"
                                     },
                                     {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "Property": "Background",
+                                        "Value": "{FastestLapBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlfaRomeoTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AlfaRomeoPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition": "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AlfaRomeo3rdBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{AlfaRomeoSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{DNFText}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd" : "{RenderP3Colors}",
+                                        "ConditionAnd": "{RenderAlfaRomeoTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{BlackText}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlphaTauriTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AlphaTauriPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderAlphaTauriTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AlphaTauri4thBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlphaTauriTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{WhiteText}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
+                                        "ConditionAnd": "{RenderAlphaTauriTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{WhiteText}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd" : "{RenderP3Colors}",
+                                        "ConditionAnd": "{RenderAlphaTauriTheme}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{WhiteText}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlpineTheme}",
+                                        "Property":"Background",
+                                        "Value": "{Alpine3rdBG}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAlpineTheme}",
+                                        "Property":"Foreground",
+                                        "Value": "{Alpine4th}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter= 1}",
+                                        "ConditionAnd": "{RenderP1Colors}",
+                                        "ConditionAnd": "{RenderAlpineTheme}",
+                                        "Property":"Foreground",
+                                        "Value": "{AlpinePrimary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter= 2}",
+                                        "ConditionAnd": "{RenderP1Colors}",
+                                        "ConditionAnd": "{RenderAlpineTheme}",
+                                        "Property":"Foreground",
+                                        "Value": "{AlpineSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter= 3}",
+                                        "ConditionAnd": "{RenderP1Colors}",
+                                        "ConditionAnd": "{RenderAlpineTheme}",
+                                        "Property":"Foreground",
+                                        "Value": "{Alpine3rd}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderAlpineTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AlpineSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderAlpineTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{WhiteText}"
+                                    },
+                                    {
+                                        "Condition": "{RenderAstonMartinTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AstonMartinPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderAstonMartinTheme}",
+                                        "Property": "Background",
+                                        "Value": "{AstonMartin3rdBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderAstonMartinTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AstonMartin3rd}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderAstonMartinTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AstonMartinSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderAstonMartinTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AstonMartinPrimary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderAstonMartinTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{AstonMartinSecondary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderFerrariTheme}",
+                                        "Property": "Background",
+                                        "Value": "{FerrariPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderFerrariTheme}",
+                                        "Property": "Background",
+                                        "Value": "{FerrariSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderFerrariTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Ferrari3rd}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderFerrariTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{P2Foreground}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderFerrariTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{FerrariSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderFerrariTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{FerrariPrimary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderHaasTheme}",
+                                        "Property": "Background",
+                                        "Value": "{HaasSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderHaasTheme}",
+                                        "Property": "Background",
+                                        "Value": "{Haas3rdBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderHaasTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Haas3rd}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderHaasTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{P2Foreground}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderHaasTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{HaasSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderHaasTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Haas4th}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMcLarenTheme}",
+                                        "Property": "Background",
+                                        "Value": "{McLarenPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderMcLarenTheme}",
+                                        "Property": "Background",
+                                        "Value": "{McLarenSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderMcLarenTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{McLaren4th}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderMcLarenTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{McLarenSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderMcLarenTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{McLarenPrimary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderMcLarenTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{McLaren3rd}"
+                                    },
+                                    {
+                                        "Condition": "{RenderMercedesTheme}",
+                                        "Property": "Background",
+                                        "Value": "{MercedesPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderMercedesTheme}",
+                                        "Property": "Background",
+                                        "Value": "{MercedesSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderMercedesTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Mercedes4th}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderMercedesTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{DNFText}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderMercedesTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{MercedesSecondary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderMercedesTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{WhiteText}"
+                                    },
+                                    {
+                                        "Condition": "{RenderRedBullTheme}",
+                                        "Property": "Background",
+                                        "Value": "{RedBullPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderRedBullTheme}",
+                                        "Property": "Background",
+                                        "Value": "{RedBull4thBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderRedBullTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{RedBull3rd}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderRedBullTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{RedBullPrimary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderRedBullTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{RedBull4th}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderRedBullTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{RedBullSecondary}"
+                                    },
+                                    {
+                                        "Condition": "{RenderWilliamsTheme}",
+                                        "Property": "Background",
+                                        "Value": "{WilliamsSecondaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderWilliamsTheme}",
+                                        "Property": "Background",
+                                        "Value": "{WilliamsPrimaryBG}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAnd": "{RenderWilliamsTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Williams3rd}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderWilliamsTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{DNFText}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAnd": "{RenderWilliamsTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{WilliamsPrimary}"
+                                    },
+                                    {
+                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
+                                        "ConditionAnd": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderWilliamsTheme}",
+                                        "Property": "Foreground",
+                                        "Value": "{Williams4th}"
+                                    },
+                                    {
                                         "Condition" : "{Item.IsRaceMajorClassified, Converter=BoolReverse}",
                                         "Setters":[ 
                                             {
@@ -229,19 +820,87 @@
                                             },
                                         ]
                                     },
-                                    {
-                                        "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
-                                        "ConditionAnd": "{RenderFLBackground}",
-                                        "Property": "Background",
-                                        "Value": "{FastestLapBG}"
-                                    },
                                 ]
                                 
                             }
                         }                        
                     ]
                 }
-            }
+            },
+                                               //footer
+                                               {
+                                                "BlockType": "dock",
+                                                "Width": "*",
+                                                "Height": "*",
+                                                "Margin": "8, 28, 8, 0",
+                                                "Spacing": 0,
+                                                "Items": [
+                                                    {
+                                                        "BlockType": "text",
+                                                        "Width": "1360",
+                                                        "Foreground": "#85CCCCCC",
+                                                        "Height": "*",
+                                                        "Source": "*Bold denotes started on pole",
+                                                        "TextOptions": {
+                                                            "FontSize": 28,
+                                                            "Wrap": true,
+                                                            "HorizontalAlignment": "Left"
+                                                        },
+                                                        "Triggers": [
+                                                            {
+                                                                "Condition": "{RenderAlfaRomeoTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{AlfaRomeoPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderAlphaTauriTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{AlphaTauriPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderAlpineTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{AlpinePrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderAstonMartinTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{AstonMartinPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderFerrariTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{FerrariPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderHaasTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{HaasPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderMcLarenTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{McLarenPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderMercedesTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{MercedesPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderRedBullTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{RedBullPrimary}"
+                                                            },
+                                                            {
+                                                                "Condition": "{RenderWilliamsTheme}",
+                                                                "Property": "Foreground",
+                                                                "Value": "{WilliamsPrimary}"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
         ]
     }
 }
